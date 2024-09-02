@@ -15,10 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-@Slf4j
 public class UserRepository {
-    private static final Logger logger = LoggerFactory.getLogger(UserRepository.class);
-
     private final JdbcTemplate jdbcTemplate;
 
     public UserRepository(JdbcTemplate jdbcTemplate) {
